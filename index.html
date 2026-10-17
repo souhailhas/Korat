@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>كروت — شحن فري فاير وببجي وPES ونتفلكس ورصيد جيزي وموبيليس وأوريدو</title>
+<meta name="description" content="اشحن فري فاير وببجي وeFootball، واشترِ بطاقات نتفلكس ورصيد جيزي وموبيليس وأوريدو بالدولار. تسليم سريع ودعم على تيليجرام.">
+<meta property="og:title" content="كروت — بطاقات شحن الألعاب والرصيد">
+<meta property="og:description" content="فري فاير، ببجي، PES، نتفلكس، جيزي، موبيليس، أوريدو. تسليم سريع.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f7;--surface:#fff;--ink:#10263a;--muted:#55697a;--line:#d5dfe7;--accent:#e5a82b;--accent-ink:#10263a;--ok:#1b8a69;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1a27;--surface:#142636;--ink:#eaf1f6;--muted:#9bb0c0;--line:#243a4c;--ok:#4cc9a1}}
+:root[data-theme="dark"]{--bg:#0c1a27;--surface:#142636;--ink:#eaf1f6;--muted:#9bb0c0;--line:#243a4c;--ok:#4cc9a1}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:1.4rem}
+.cartbtn{background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:8px 18px;font:inherit;font-weight:600;cursor:pointer}
+.hero{padding:34px 0 26px}
+.hero h1{font-size:clamp(1.9rem,6vw,3.2rem);line-height:1.25;margin:0 0 12px;font-weight:800;max-width:14em}
+.hero p{color:var(--muted);max-width:32em;margin:0 0 18px;font-size:1.05rem}
+.perks{display:flex;flex-wrap:wrap;gap:10px 22px;color:var(--ok);font-weight:600;font-size:.95rem}
+h2{font-size:1.4rem;margin:30px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.face{border-radius:12px;aspect-ratio:1.6;padding:14px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.face b{font-size:1.15rem}
+.face span{font-size:1.9rem;font-weight:800}
+.face::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.14);left:-30px;bottom:-40px}
+.art{display:block;width:100%;max-width:460px;margin:26px auto 0}
+.ico{position:absolute;left:12px;top:10px;width:52px;height:52px;z-index:1}
+.ico svg{width:100%;height:100%}
+.get{color:var(--ok);font-weight:600;font-size:.95rem}
+.get b{font-size:1.15rem}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.amt{flex:1;min-width:58px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;padding:7px 4px;font:inherit;font-weight:600;cursor:pointer}
+.amt[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.add{background:var(--ink);color:var(--bg);border:0;border-radius:10px;padding:10px;font:inherit;font-weight:700;cursor:pointer}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.how div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.how b{display:block;margin-bottom:4px}
+.how p{margin:0;color:var(--muted);font-size:.95rem}
+footer{color:var(--muted);text-align:center;padding:34px 0;font-size:.9rem}
+#cart{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:flex-end;justify-content:center;z-index:20}
+#cart.open{display:flex}
+.sheet{background:var(--surface);width:100%;max-width:520px;border-radius:20px 20px 0 0;padding:20px 20px calc(20px + env(safe-area-inset-bottom,0px));max-height:80%;overflow:auto}
+.line{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.line button{background:none;border:0;color:#c0392b;cursor:pointer;font:inherit}
+.total{display:flex;justify-content:space-between;font-weight:800;font-size:1.15rem;padding:14px 0}
+.order{display:block;text-align:center;background:var(--ok);color:#fff;text-decoration:none;border-radius:12px;padding:12px;font-weight:700}
+.close{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;margin-top:8px;width:100%}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">كروت</div><button class="cartbtn" id="open">السلة (<span id="n">0</span>)</button></header>
+
+<section class="hero">
+<h1>بطاقات رقمية تصلك الكود خلال دقائق</h1>
+<p>شحن فري فاير وببجي وPES، نتفلكس، ورصيد جيزي وموبيليس وأوريدو. كل الأسعار بالدولار.</p>
+<div class="perks"><span>✓ تسليم فوري</span><span>✓ أكواد أصلية</span><span>✓ دعم على تيليجرام</span></div>
+<svg class="art" viewBox="0 0 400 240" aria-hidden="true">
+<defs>
+<linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f58a1f"/><stop offset="1" stop-color="#a63d00"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e50914"/><stop offset="1" stop-color="#3a0a0d"/></linearGradient>
+<linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f6fd6"/><stop offset="1" stop-color="#0d2f66"/></linearGradient>
+</defs>
+<g transform="rotate(-14 110 130)"><rect x="30" y="70" width="170" height="106" rx="14" fill="url(#g1)"/><path fill="#fff" d="M95 100h28l12 14-26 28-26-28z"/></g>
+<g transform="rotate(12 290 130)"><rect x="205" y="66" width="170" height="106" rx="14" fill="url(#g2)"/><rect x="262" y="96" width="56" height="40" rx="7" fill="#fff"/><path fill="#e50914" d="M283 106l16 10-16 10z"/></g>
+<g><rect x="115" y="92" width="170" height="110" rx="14" fill="url(#g3)" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><circle cx="200" cy="130" r="20" fill="#fff"/><circle cx="200" cy="130" r="13" fill="none" stroke="#1f6fd6" stroke-width="3"/><rect x="135" y="170" width="70" height="8" rx="4" fill="#fff" opacity=".7"/><rect x="135" y="184" width="40" height="6" rx="3" fill="#fff" opacity=".4"/></g>
+<circle cx="60" cy="40" r="16" fill="#e5a82b"/><circle cx="60" cy="40" r="10" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/>
+<path fill="#1f9d7a" d="M335 24h22l10 12-21 22-21-22z"/>
+<circle cx="350" cy="210" r="9" fill="#e5a82b" opacity=".8"/><circle cx="40" cy="210" r="6" fill="#1f6fd6" opacity=".8"/>
+</svg>
+</section>
+
+<h2>اختر بطاقتك</h2>
+<div class="grid" id="grid"></div>
+
+<h2>طرق الدفع</h2>
+<div class="how">
+<div><b>بريدي موب / CCP</b><p>حوّل المبلغ وأرسل صورة الإثبات.</p></div>
+<div><b>Binance Pay / USDT</b><p>دفع بالدولار الرقمي برسوم قليلة.</p></div>
+<div><b>PayPal</b><p>للزبائن خارج الجزائر.</p></div>
+</div>
+<p style="color:var(--muted);font-size:.95rem">بيانات الحساب ترسل لك في محادثة تيليجرام بعد إرسال الطلب. الكود يصلك بعد تأكيد وصول المبلغ.</p>
+
+<h2>كيف تشتري؟</h2>
+<div class="how">
+<div><b>اختر الفئة</b><p>حدد البطاقة والمبلغ المناسب وأضفها للسلة.</p></div>
+<div><b>أرسل الطلب</b><p>يفتح تيليجرام وطلبك منسوخ، الصقه في المحادثة.</p></div>
+<div><b>استلم الكود</b><p>ندفعك بعد التأكيد ونرسل الكود مباشرة.</p></div>
+</div>
+
+<footer>© كروت — جميع الحقوق محفوظة</footer>
+</div>
+
+<div id="cart" role="dialog" aria-modal="true" aria-label="السلة">
+<div class="sheet"><h2 style="margin-top:0">سلتك</h2><div id="lines"></div>
+<div class="total"><span>المجموع</span><span id="sum">0 $</span></div>
+<p style="color:var(--muted);font-size:.9rem;margin:0 0 8px">ينسخ طلبك تلقائياً، الصقه في محادثة تيليجرام.</p>
+<a class="order" id="order" href="#" target="_blank" rel="noopener">أرسل الطلب عبر تيليجرام</a>
+<button class="close" id="close">متابعة التسوق</button></div></div>
+
+<script>
+// عدّل اسم مستخدم تيليجرام هنا (بدون @)
+var TELEGRAM="Kimal23";
+// r = كم تحصل مقابل 1 دولار (تقريبي، عدّله حسب سعرك) ، u = الوحدة
+var IC={
+dia:'<svg viewBox="0 0 64 64"><path fill="#fff" d="M18 8h28l14 16-28 32L4 24z"/><path fill="rgba(0,0,0,.2)" d="M4 24h56L32 56z"/></svg>',
+coin:'<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff"/><circle cx="32" cy="32" r="21" fill="none" stroke="rgba(0,0,0,.3)" stroke-width="4"/><text x="32" y="39" font-size="20" font-weight="800" text-anchor="middle" fill="rgba(0,0,0,.55)">UC</text></svg>',
+ball:'<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff"/><path fill="rgba(0,0,0,.6)" d="M32 20l10 7-4 12H26l-4-12z"/><path stroke="rgba(0,0,0,.6)" stroke-width="3" fill="none" d="M32 20V6M42 27l14-5M38 39l8 12M26 39l-8 12M22 27L8 22"/></svg>',
+play:'<svg viewBox="0 0 64 64"><rect x="6" y="12" width="52" height="40" rx="8" fill="#fff"/><path fill="rgba(0,0,0,.55)" d="M26 22l16 10-16 10z"/></svg>',
+phone:'<svg viewBox="0 0 64 64"><rect x="18" y="4" width="28" height="56" rx="6" fill="#fff"/><rect x="22" y="12" width="20" height="34" rx="2" fill="rgba(0,0,0,.35)"/><circle cx="32" cy="53" r="3" fill="rgba(0,0,0,.35)"/></svg>',
+gp:'<svg viewBox="0 0 64 64"><path fill="#fff" d="M10 20h44l-4 36H14z"/><path fill="none" stroke="#fff" stroke-width="4" d="M22 24v-6a10 10 0 0120 0v6"/><path fill="rgba(0,0,0,.45)" d="M27 30l14 8-14 8z"/></svg>'
+};
+var products=[
+{n:"فري فاير (جواهر)",ic:"dia",r:100,u:"جوهرة",c:"linear-gradient(135deg,#f58a1f,#a63d00)",a:[1,5,10,25,50,100,200]},
+{n:"ببجي (UC)",ic:"coin",r:60,u:"UC",c:"linear-gradient(135deg,#d9a21b,#4a3a12)",a:[1,5,10,25,50,100,200]},
+{n:"eFootball PES (عملات)",ic:"ball",r:100,u:"عملة",c:"linear-gradient(135deg,#1f6fd6,#0d2f66)",a:[5,10,25,50,100,200]},
+{n:"بطاقة قوقل بلاي",ic:"gp",r:1,u:"$ رصيد قوقل بلاي",c:"linear-gradient(135deg,#00a86b,#0b5e8a)",a:[5,10,15,25,50,100]},
+{n:"نتفلكس",ic:"play",r:1,u:"$ رصيد نتفلكس",c:"linear-gradient(135deg,#e50914,#1a1111)",a:[10,15,25,50,100,200]},
+{n:"رصيد جيزي",ic:"phone",r:135,u:"دج رصيد",c:"linear-gradient(135deg,#e30613,#8a0410)",a:[2,5,10,20,50,100]},
+{n:"رصيد موبيليس",ic:"phone",r:135,u:"دج رصيد",c:"linear-gradient(135deg,#3aa935,#145a12)",a:[2,5,10,20,50,100]},
+{n:"رصيد أوريدو",ic:"phone",r:135,u:"دج رصيد",c:"linear-gradient(135deg,#c8102e,#4d0a16)",a:[2,5,10,20,50,100]}
+];
+function gain(p,v){return (v*p.r).toLocaleString("en")+" "+p.u}
+var cart=[];
+var $=function(i){return document.getElementById(i)};
+var grid=$("grid");
+products.forEach(function(p,i){
+  var sel=p.a[0];
+  var d=document.createElement("div");d.className="item";
+  var face='<div class="face" style="background:'+p.c+'"><div class="ico">'+IC[p.ic]+'</div><b>'+p.n+'</b><span id="v'+i+'">'+sel+' $</span></div><div class="get">تحصل على: <b id="g'+i+'">'+gain(p,sel)+'</b></div>';
+  var btns=p.a.map(function(x,j){return '<button class="amt" data-i="'+i+'" data-v="'+x+'" aria-pressed="'+(j==0)+'">'+x+' $</button>'}).join("");
+  d.innerHTML=face+'<div class="row">'+btns+'</div><button class="add" data-add="'+i+'">أضف للسلة</button>';
+  d._sel=sel;grid.appendChild(d);
+});
+grid.addEventListener("click",function(e){
+  var t=e.target, item=t.closest(".item");
+  if(t.dataset.v){
+    item._sel=+t.dataset.v;
+    item.querySelectorAll(".amt").forEach(function(b){b.setAttribute("aria-pressed",b===t)});
+    $("v"+t.dataset.i).textContent=item._sel+" $";
+    $("g"+t.dataset.i).textContent=gain(products[t.dataset.i],item._sel);
+  }
+  if(t.dataset.add!==undefined){
+    var pp=products[t.dataset.add];cart.push({n:pp.n,v:item._sel,g:gain(pp,item._sel)});render();
+    t.textContent="تمت الإضافة ✓";setTimeout(function(){t.textContent="أضف للسلة"},1000);
+  }
+});
+function render(){
+  $("n").textContent=cart.length;
+  $("lines").innerHTML=cart.length?cart.map(function(x,i){return '<div class="line"><span>'+x.n+' — '+x.v+' $ ('+x.g+')</span><button data-rm="'+i+'">حذف</button></div>'}).join(""):'<p style="color:var(--muted)">السلة فارغة. اختر بطاقة وأضفها.</p>';
+  var s=cart.reduce(function(a,x){return a+x.v},0);
+  $("sum").textContent=s+" $";
+  var msg="مرحباً، أريد طلب:\n"+cart.map(function(x){return "- "+x.n+" ("+x.v+" $ = "+x.g+")"}).join("\n")+"\nالمجموع: "+s+" $";
+  window._msg=msg;$("order").href="https://t.me/"+TELEGRAM;
+  $("order").style.display=cart.length?"block":"none";
+}
+$("lines").addEventListener("click",function(e){if(e.target.dataset.rm!==undefined){cart.splice(+e.target.dataset.rm,1);render()}});
+$("order").addEventListener("click",function(){try{navigator.clipboard.writeText(window._msg)}catch(e){}});
+$("open").onclick=function(){$("cart").classList.add("open")};
+$("close").onclick=function(){$("cart").classList.remove("open")};
+$("cart").addEventListener("click",function(e){if(e.target===$("cart"))$("cart").classList.remove("open")});
+render();
+</script>
+</body>
+</html>
